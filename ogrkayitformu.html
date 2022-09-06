@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 100px;
+            background-color: rgb(191, 226, 236);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="container text-center">
+        Öğrenci Kayıt Ekranı
+    </h1>
+    <hr>
+    <div class="alert alert-warning" role="alert">
+      Eksiksiz doldurduğunuzdan emin olunuz!!!!!
+    </div>
+    <form>
+        <div class="row">
+          <div class="col ">
+            <label for="ad" >Öğrenci Adı</label>
+            <input type="text" class="form-control" placeholder="Adınız" name="ad">
+          </div>
+          <div class="col ">
+            <label for="soyad">Öğrenci Soyadı</label>
+            <input type="text" class="form-control" placeholder="Soyadınız" name="soyad">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              <label for="ogrno">Öğrenci Numarası</label>
+              <input type="number" class="form-control" placeholder="ör:123456" name="ogrno">
+            </div>
+            <div class="col">
+              <label for="telno">Öğrenci Telefonu</label>
+              <input type="number" class="form-control" placeholder="05XXXXXXXXX" name="telno">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="dt">Doğum Tarihi</label>
+              <input type="date" class="form-control"  name="dt">
+            </div>
+            <div class="col">
+              <label for="mail">E-posta</label>
+              <input type="email" class="form-control"  name="mail">
+            </div>
+          </div>
+          <div class="row">
+            <label for="cnsyt">Cinsiyet</label>
+            <div class="custom-control custom-radio custom-control-inline col col-md-2">
+                <input type="radio" id="customRadioInline1" name="cnsyt" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Erkek</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline col col-md-2">
+                <input type="radio" id="customRadioInline2" name="cnsyt" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">Kadın</label>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                <label for="inputState">Şehir</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Seçiniz</option>
+                  <option>Erzurum</option>
+                  <option>Trabzon</option>
+                  <option>İstanbul</option>
+                </select>
+            </div>
+            <div class="col">
+              <label for="pkod">Posta Kodu</label>
+              <input type="number" class="form-control" placeholder="ör:11111" name="pkod">
+            </div>
+          </div>
+          <div >
+            <label for="inputAddress">Adres</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="mah. cad. apt. no. ilçe/il">
+          </div>
+          <div class="row">
+            <div class="col col-md-6">
+                <label for="fakulte">Fakülte</label>
+                <select id="fakulte" class="form-control">
+                <option selected>Seçiniz</option>
+                <option>Mühendislik</option>
+                <option>Fen Edebiyat </option>
+                <option>Eğitim</option>
+              </select>
+            </div>
+            <div class="col col-md-4">
+              <label for="bolum">Bölüm</label>
+              <select id="bolum" class="form-control">
+                <option selected>Seçiniz</option>
+                <option>Bilgisayar Mühendisliği</option>
+                <option>Elektrik Mühendisliği</option>
+                <option>Elektronik Mühendisliği</option>
+              </select>
+            </div>
+            <div class="col col-md-2">
+                <label for="snf">Sınıf</label>
+                <input type="number" class="form-control" placeholder="sınıf" name="snf">
+            </div>
+          </div>
+          <br><br>
+          <button type="submit" class="btn btn-primary">Kaydet</button>
+
+
+      </form>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
